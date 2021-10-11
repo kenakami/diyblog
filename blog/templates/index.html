@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>DIY Blog Home</h1>
+	<p>Welcome to DIY Blog, a website developed for an <a
+      href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/django_assessment_blog">Assessment</a>.</p>
+  <h2>Dynamic content</h2>
+  <p>The blog has the following record counts:</p>
+  <ul>
+    <li><strong>Posts:</strong> {{ num_posts }}</li>
+    <li><strong>Comments:</strong> {{ num_comments }}</li>
+    <li><strong>Bloggers:</strong> {{ num_authors }}</li>
+  </ul>
+{% endblock %}
